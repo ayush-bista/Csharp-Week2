@@ -2,8 +2,40 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello, World!");
+        List<string> fruits = new List<string>
+        {
+            "Mango",
+            "Apple",
+            "Banana"
+        };
+
+        fruits.Add("Kiwi");
+
+        fruits.Remove("Apple");
+
+        Console.WriteLine("My favorite fruits:");
+
+        foreach (string fruit in fruits)
+        {
+            Console.WriteLine(fruit);
+        }
+
+        Dictionary<int, string> fruitDictionary = new Dictionary<int, string>
+        {
+            { 1, "Mango" },
+            { 2, "Apple" },
+            { 3, "Banana" }
+        };
+
+        fruitDictionary.Add(4, "Orange");
+
+        Console.WriteLine("\nFruit Dictionary:");
+
+        foreach (KeyValuePair<int, string> item in fruitDictionary)
+        {
+            Console.WriteLine($"ID: {item.Key}, Fruit: {item.Value}");
+        }
     }
 }
