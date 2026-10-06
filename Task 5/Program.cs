@@ -4,23 +4,26 @@ class Program
 {
     static void Main()
     {
-        // 1. Array of 5 numbers
-        int[] numbers = { 42, 7, 13, 99, 23 };
+        // Create birthdate
+        DateTime birthDate = new DateTime(2006, 5, 31);
 
-        // 2. Sort ascending
-        Array.Sort(numbers); // { 7, 13, 23, 42, 99 }
+        // Create current date and time
+        DateTime currentDate = DateTime.Now;
 
-        // 3. Reverse (descending)
-        Array.Reverse(numbers); // { 99, 42, 23, 13, 7 }
+        // Calculate the difference using TimeSpan
+        TimeSpan ageDifference = currentDate - birthDate;
 
-        // 4. Print using for loop
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            Console.WriteLine($"Index {i}: {numbers[i]}");
-        }
+        // Calculate age in years
+        int age = (int)(ageDifference.TotalDays / 365.25);
 
-        // 5. Find index of a number
-        int index = Array.IndexOf(numbers, 42);
-        Console.WriteLine($"Position of 42: Index {index}");
+        // Print details
+        Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
+        Console.WriteLine($"Current Date & Time: {currentDate}");
+        Console.WriteLine($"Age: {age} years");
+
+        // Add 10 days to birthdate
+        DateTime newDate = birthDate.AddDays(10);
+
+        Console.WriteLine($"Birthdate + 10 days: {newDate:yyyy-MM-dd}");
     }
 }
