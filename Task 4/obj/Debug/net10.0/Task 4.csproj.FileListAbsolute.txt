@@ -12,3 +12,4 @@ D:\JetBrains Rider 2026.2.3\RiderProjects\Workshop - Week2\Task 4\obj\Debug\net1
 D:\JetBrains Rider 2026.2.3\RiderProjects\Workshop - Week2\Task 4\obj\Debug\net10.0\Task 4.pdb
 D:\JetBrains Rider 2026.2.3\RiderProjects\Workshop - Week2\Task 4\obj\Debug\net10.0\Task 4.genruntimeconfig.cache
 D:\JetBrains Rider 2026.2.3\RiderProjects\Workshop - Week2\Task 4\obj\Debug\net10.0\ref\Task 4.dll
+D:\JetBrains Rider 2026.2.3\RiderProjects\Workshop - Week2\Task 4\obj\Debug\net10.0\Task 4.sourcelink.json
